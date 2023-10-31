@@ -47,7 +47,6 @@ public class UserController {
 
     @GetMapping("/getAll")
     public String getAllUsers() {
-        logger.info("getAll0000000");
        List<User> users = userService.getAllUsers();
         StringBuilder result = new StringBuilder();
         result.append("All Users:<br>");
@@ -56,4 +55,15 @@ public class UserController {
         }
         return result.toString();
     }
+    @PostMapping("/create")
+    public ResponseEntity<String> createUser(@RequestBody User user) {
+        logger.info("createUser 7777777");
+        boolean isUserCreated = userService.saveUser(user);
+        if (isUserCreated) {
+            return ResponseEntity.status(HttpStatus.CREATED).body("User created successfully");
+        } else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("User creation failed");
+        }
+    }
+
 }

@@ -1,18 +1,31 @@
-2023-10-31 18:13:54.377  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
-2023-10-31 18:13:54.378  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2023-10-31 18:13:54.466  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
-2023-10-31 18:13:54.467  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-31 18:13:54.467  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
-2023-10-31 18:13:54.470  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-88].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
-2023-10-31 18:13:54.470  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 88 ms
-2023-10-31 18:13:54.473  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3bac1620] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
-2023-10-31 18:13:54.473  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-10-31 18:13:54.475  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+2023-10-31 18:39:02.714  INFO 31795 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:39:02.718  INFO 31795 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-31 18:39:02.768  INFO 31795 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-31 18:39:15.068  INFO 31875 --- [main] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 31875 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:39:15.069  INFO 31875 --- [main] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:39:15.332  INFO 31875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-31 18:39:15.354  INFO 31875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2023-10-31 18:39:15.556  INFO 31875 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:39:15.560  INFO 31875 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:39:15.560  INFO 31875 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:39:15.595  INFO 31875 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:39:15.598  INFO 31875 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 510 ms
+2023-10-31 18:39:15.642  INFO 31875 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-31 18:39:15.653  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:39:15.654  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:39:15.722  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:39:15.723  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:39:15.723  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:39:15.726  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-93].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:39:15.726  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 70 ms
+2023-10-31 18:39:15.729  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7af878ea] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 18:39:15.730  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 18:39:15.732  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-10-31 18:13:54.476 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2023-10-31 18:39:15.733 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3bac1620] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7af878ea] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
@@ -36,7 +49,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3bac1620] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7af878ea] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
@@ -80,27 +93,1027 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.reposi
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
 	... 50 common frames omitted
 
-2023-10-31 18:13:58.994  INFO 28699 --- [main] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 28699 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
-2023-10-31 18:13:58.995  INFO 28699 --- [main] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2023-10-31 18:13:59.391  INFO 28699 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-31 18:13:59.411  INFO 28699 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
-2023-10-31 18:13:59.610  INFO 28699 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
-2023-10-31 18:13:59.613  INFO 28699 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-31 18:13:59.614  INFO 28699 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
-2023-10-31 18:13:59.646  INFO 28699 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-10-31 18:13:59.646  INFO 28699 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
-2023-10-31 18:13:59.690  INFO 28699 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-31 18:13:59.856  INFO 28699 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-31 18:13:59.886  INFO 28699 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-31 18:13:59.907  INFO 28699 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-10-31 18:13:59.975  INFO 28699 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-10-31 18:14:00.019  INFO 28699 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-10-31 18:14:00.252  INFO 28699 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-31 18:14:00.256  INFO 28699 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-31 18:14:00.406  WARN 28699 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-31 18:14:00.525  INFO 28699 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1234 (http) with context path ''
-2023-10-31 18:14:00.530  INFO 28699 --- [main] c.e.S.SpringBootDemoApplication          : Started SpringBootDemoApplication in 1.713 seconds (JVM running for 7.095)
-2023-10-31 18:14:28.605  INFO 28699 --- [http-nio-1234-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-31 18:14:28.606  INFO 28699 --- [http-nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-10-31 18:14:28.608  INFO 28699 --- [http-nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-10-31 18:14:28.620  INFO 28699 --- [http-nio-1234-exec-1] c.e.S.controller.UserController          : getAll0000000
+2023-10-31 18:39:15.829  INFO 31875 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-31 18:39:15.860  INFO 31875 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-31 18:39:15.880  INFO 31875 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-31 18:39:15.968  INFO 31875 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-31 18:39:16.019  INFO 31875 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-10-31 18:39:16.258  INFO 31875 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-31 18:39:16.263  INFO 31875 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:39:16.394  WARN 31875 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-31 18:39:16.517  INFO 31875 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1234 (http) with context path ''
+2023-10-31 18:39:16.524  INFO 31875 --- [main] c.e.S.SpringBootDemoApplication          : Started SpringBootDemoApplication in 1.586 seconds (JVM running for 7.025)
+2023-10-31 18:39:29.816  INFO 31961 --- [main] c.e.S.SpringBootDemoApplicationTests     : Starting SpringBootDemoApplicationTests using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 31961 (started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:39:29.816  INFO 31961 --- [main] c.e.S.SpringBootDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:39:30.055  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:39:30.056  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:39:30.090  INFO 31961 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-31 18:39:30.112  INFO 31961 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2023-10-31 18:39:30.134  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:39:30.135  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:39:30.135  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:39:30.139  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-94].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:39:30.139  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 81 ms
+2023-10-31 18:39:30.144  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@248cd2e2] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 18:39:30.144  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 18:39:30.147  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 18:39:30.149 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@248cd2e2] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@248cd2e2] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 50 common frames omitted
+
+2023-10-31 18:39:30.305  INFO 31961 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-31 18:39:30.528  INFO 31961 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-31 18:39:30.564  INFO 31961 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-31 18:39:30.584  INFO 31961 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-31 18:39:30.640  INFO 31961 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-31 18:39:30.687  INFO 31961 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-10-31 18:39:30.986  INFO 31961 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-31 18:39:30.996  INFO 31961 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:39:31.204  WARN 31961 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-31 18:39:31.396  INFO 31961 --- [main] c.e.S.SpringBootDemoApplicationTests     : Started SpringBootDemoApplicationTests in 6.711 seconds (JVM running for 7.078)
+2023-10-31 18:39:31.512  INFO 31961 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:39:31.513  INFO 31961 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-31 18:39:31.546  INFO 31961 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-31 18:39:35.698  INFO 31875 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:39:35.700  INFO 31875 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-31 18:39:35.722  INFO 31875 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-31 18:39:49.741  INFO 31997 --- [main] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 31997 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:39:49.742  INFO 31997 --- [main] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:39:49.979  INFO 31997 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-31 18:39:49.998  INFO 31997 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2023-10-31 18:39:50.214  INFO 31997 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:39:50.218  INFO 31997 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:39:50.218  INFO 31997 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:39:50.259  INFO 31997 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:39:50.259  INFO 31997 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 493 ms
+2023-10-31 18:39:50.298  INFO 31997 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-31 18:39:50.474  INFO 31997 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-31 18:39:50.501  INFO 31997 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-31 18:39:50.518  INFO 31997 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-31 18:39:50.570  INFO 31997 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-31 18:39:50.608  INFO 31997 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-10-31 18:39:50.812  INFO 31997 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-31 18:39:50.816  INFO 31997 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:39:50.940  WARN 31997 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-31 18:39:51.052  INFO 31997 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1234 (http) with context path ''
+2023-10-31 18:39:51.057  INFO 31997 --- [main] c.e.S.SpringBootDemoApplication          : Started SpringBootDemoApplication in 1.465 seconds (JVM running for 6.84)
+2023-10-31 18:40:19.468  INFO 31997 --- [http-nio-1234-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-31 18:40:19.468  INFO 31997 --- [http-nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-31 18:40:19.470  INFO 31997 --- [http-nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-31 18:40:19.508  INFO 31997 --- [http-nio-1234-exec-1] c.e.S.controller.UserController          : createUser 7777777
+2023-10-31 18:40:19.579  WARN 31997 --- [http-nio-1234-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
+2023-10-31 18:40:19.580 ERROR 31997 --- [http-nio-1234-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'name' doesn't have a default value
+2023-10-31 18:40:19.587 ERROR 31997 --- [http-nio-1234-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement] with root cause
+
+java.sql.SQLException: Field 'name' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3914) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:329) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:122) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.30.jar:5.3.30]
+	at jdk.proxy2/jdk.proxy2.$Proxy99.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:315) ~[spring-orm-5.3.30.jar:5.3.30]
+	at jdk.proxy2/jdk.proxy2.$Proxy99.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:666) ~[spring-data-jpa-2.7.17.jar:2.7.17]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.30.jar:5.3.30]
+	at jdk.proxy2/jdk.proxy2.$Proxy103.save(Unknown Source) ~[na:na]
+	at com.example.SpringBootDemo.service.UserService.saveUser(UserService.java:27) ~[classes/:na]
+	at com.example.SpringBootDemo.controller.UserController.createUser(UserController.java:61) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-10-31 18:55:51.907  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:55:51.910  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:55:51.970  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:55:51.970  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:55:51.970  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:55:51.974  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-95].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:55:51.974  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 63 ms
+2023-10-31 18:55:51.977  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@79bb7438] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 18:55:51.977  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 18:55:51.979  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 18:55:51.980 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@79bb7438] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@79bb7438] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 50 common frames omitted
+
+2023-10-31 18:56:01.075  INFO 31997 --- [http-nio-1234-exec-4] c.e.S.controller.UserController          : createUser 7777777
+2023-10-31 18:56:01.129  WARN 31997 --- [http-nio-1234-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
+2023-10-31 18:56:01.129 ERROR 31997 --- [http-nio-1234-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'name' doesn't have a default value
+2023-10-31 18:56:01.145 ERROR 31997 --- [http-nio-1234-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement] with root cause
+
+java.sql.SQLException: Field 'name' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3914) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:329) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:122) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.30.jar:5.3.30]
+	at jdk.proxy2/jdk.proxy2.$Proxy99.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:315) ~[spring-orm-5.3.30.jar:5.3.30]
+	at jdk.proxy2/jdk.proxy2.$Proxy99.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:666) ~[spring-data-jpa-2.7.17.jar:2.7.17]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.17.jar:2.7.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.30.jar:5.3.30]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.30.jar:5.3.30]
+	at jdk.proxy2/jdk.proxy2.$Proxy103.save(Unknown Source) ~[na:na]
+	at com.example.SpringBootDemo.service.UserService.saveUser(UserService.java:27) ~[classes/:na]
+	at com.example.SpringBootDemo.controller.UserController.createUser(UserController.java:61) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-10-31 18:56:11.972  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:56:11.972  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:56:12.043  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:56:12.043  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:56:12.043  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:56:12.046  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-96].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:56:12.046  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 70 ms
+2023-10-31 18:56:12.049  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4fd73f49] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 18:56:12.049  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 18:56:12.051  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 18:56:12.053 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4fd73f49] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4fd73f49] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 50 common frames omitted
+
+2023-10-31 18:57:20.446  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:57:20.447  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:57:20.524  INFO 34313 --- [main] c.e.S.SpringBootDemoApplicationTests     : Starting SpringBootDemoApplicationTests using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 34313 (started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:57:20.537  INFO 34313 --- [main] c.e.S.SpringBootDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:57:20.575  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:57:20.577  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:57:20.577  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:57:20.586  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-97].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:57:20.586  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 136 ms
+2023-10-31 18:57:20.595  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@76d13171] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 18:57:20.595  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 18:57:20.599  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 18:57:20.602 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@76d13171] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@76d13171] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 50 common frames omitted
+
+2023-10-31 18:57:21.509  INFO 34313 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-31 18:57:21.544  INFO 34313 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2023-10-31 18:57:21.814  INFO 34313 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-31 18:57:22.098  INFO 34313 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-31 18:57:22.175  INFO 34313 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-31 18:57:22.200  INFO 34313 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-31 18:57:22.269  INFO 34313 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-31 18:57:22.336  INFO 34313 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-10-31 18:57:22.688  INFO 34313 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-31 18:57:22.694  INFO 34313 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:57:22.994  WARN 34313 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-31 18:57:23.197  INFO 34313 --- [main] c.e.S.SpringBootDemoApplicationTests     : Started SpringBootDemoApplicationTests in 7.937 seconds (JVM running for 8.355)
+2023-10-31 18:57:23.318  INFO 34313 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:57:23.319  INFO 34313 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-31 18:57:23.336  INFO 34313 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-31 18:57:27.362  INFO 31997 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:57:27.369  INFO 31997 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-31 18:57:27.397  INFO 31997 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-31 18:57:39.498  INFO 34338 --- [main] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 34338 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 18:57:39.499  INFO 34338 --- [main] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 18:57:39.740  INFO 34338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-31 18:57:39.760  INFO 34338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2023-10-31 18:57:39.962  INFO 34338 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 18:57:39.966  INFO 34338 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 18:57:39.967  INFO 34338 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 18:57:40.009  INFO 34338 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-31 18:57:40.010  INFO 34338 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
+2023-10-31 18:57:40.052  INFO 34338 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-31 18:57:40.275  INFO 34338 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-31 18:57:40.309  INFO 34338 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-31 18:57:40.327  INFO 34338 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-31 18:57:40.383  INFO 34338 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-31 18:57:40.436  INFO 34338 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-10-31 18:57:40.670  INFO 34338 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-31 18:57:40.673  INFO 34338 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 18:57:40.796  WARN 34338 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-31 18:57:40.922  INFO 34338 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1234 (http) with context path ''
+2023-10-31 18:57:40.928  INFO 34338 --- [main] c.e.S.SpringBootDemoApplication          : Started SpringBootDemoApplication in 1.568 seconds (JVM running for 6.918)
+2023-10-31 18:57:48.015  INFO 34338 --- [http-nio-1234-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-31 18:57:48.015  INFO 34338 --- [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-31 18:57:48.017  INFO 34338 --- [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-31 18:57:48.056  INFO 34338 --- [http-nio-1234-exec-2] c.e.S.controller.UserController          : createUser 7777777
+2023-10-31 19:02:26.481  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 19:02:26.482  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 19:02:26.530  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 19:02:26.530  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 19:02:26.530  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 19:02:26.533  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-98].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2023-10-31 19:02:26.533  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 50 ms
+2023-10-31 19:02:26.536  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3408f68b] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 19:02:26.536  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 19:02:26.538  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 19:02:26.540 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3408f68b] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3408f68b] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 50 common frames omitted
+
+2023-10-31 19:04:11.796  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 19:04:11.797  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 19:04:11.881  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 19:04:11.881  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 19:04:11.881  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 19:04:11.884  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-99].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2023-10-31 19:04:11.884  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 86 ms
+2023-10-31 19:04:11.888  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@16305e86] failed; nested exception is java.lang.NoClassDefFoundError: com/example/SpringBootDemo/service/UserService
+2023-10-31 19:04:11.888  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 19:04:11.890  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 19:04:11.892 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@16305e86] failed; nested exception is java.lang.NoClassDefFoundError: com/example/SpringBootDemo/service/UserService
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: java.lang.NoClassDefFoundError: com/example/SpringBootDemo/service/UserService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.SpringBootDemo.service.UserService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 25 common frames omitted
+
+2023-10-31 19:05:38.162  INFO 34338 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 19:05:38.164  INFO 34338 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-31 19:05:38.183  INFO 34338 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-31 19:05:40.447  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 19:05:40.448  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 19:05:40.517  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 19:05:40.519  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 19:05:40.519  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 19:05:40.526  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-100].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2023-10-31 19:05:40.526  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 76 ms
+2023-10-31 19:05:40.563  INFO 55941 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-31 19:05:40.567  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1234 (http) with context path ''
+2023-10-31 19:05:40.569  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Started SpringBootDemoApplication in 5.156 seconds (JVM running for 71633.97)
+2023-10-31 19:05:40.570  INFO 55941 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-31 19:07:47.701  INFO 55941 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (6 additions, 0 deletions, 4 modifications)
+2023-10-31 19:07:47.710  INFO 55941 --- [Thread-185] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 19:07:52.633  INFO 35704 --- [main] c.e.S.SpringBootDemoApplicationTests     : Starting SpringBootDemoApplicationTests using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 35704 (started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 19:07:52.634  INFO 35704 --- [main] c.e.S.SpringBootDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 19:07:52.802  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 19:07:52.803  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 19:07:52.862  INFO 35704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-31 19:07:52.874  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 19:07:52.874  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 19:07:52.875  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 19:07:52.878  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-100].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2023-10-31 19:07:52.879  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 74 ms
+2023-10-31 19:07:52.882  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2833720c] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 19:07:52.882  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 19:07:52.884  INFO 35704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2023-10-31 19:07:52.884  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 19:07:52.887 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2833720c] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2833720c] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 50 common frames omitted
+
+2023-10-31 19:07:53.066  INFO 35704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-31 19:07:53.354  INFO 35704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-31 19:07:53.394  INFO 35704 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-31 19:07:53.420  INFO 35704 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-31 19:07:53.487  INFO 35704 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-31 19:07:53.545  INFO 35704 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-10-31 19:07:53.771  INFO 35704 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-31 19:07:53.774  INFO 35704 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 19:07:53.991  WARN 35704 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-31 19:07:54.172  INFO 35704 --- [main] c.e.S.SpringBootDemoApplicationTests     : Started SpringBootDemoApplicationTests in 6.672 seconds (JVM running for 7.009)
+2023-10-31 19:07:54.282  INFO 35704 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 19:07:54.284  INFO 35704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-31 19:07:54.312  INFO 35704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-31 19:08:08.911  INFO 35733 --- [main] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 35733 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 19:08:08.912  INFO 35733 --- [main] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 19:08:09.144  INFO 35733 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-31 19:08:09.162  INFO 35733 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2023-10-31 19:08:09.350  INFO 35733 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 19:08:09.354  INFO 35733 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 19:08:09.354  INFO 35733 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 19:08:09.391  INFO 35733 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-31 19:08:09.391  INFO 35733 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 459 ms
+2023-10-31 19:08:09.429  INFO 35733 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-31 19:08:09.444  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : Starting SpringBootDemoApplication using Java 20.0.2.1 on CPSElenoreChenMBP2023.local with PID 55941 (/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes started by elenorechenmbp2023 in /Users/elenorechenmbp2023/git/SpringBootDemo)
+2023-10-31 19:08:09.445  INFO 55941 --- [restartedMain] c.e.S.SpringBootDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-31 19:08:09.518  INFO 55941 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1234 (http)
+2023-10-31 19:08:09.518  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-31 19:08:09.518  INFO 55941 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-31 19:08:09.521  INFO 55941 --- [restartedMain] o.a.c.c.C.[Tomcat-101].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2023-10-31 19:08:09.522  INFO 55941 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 75 ms
+2023-10-31 19:08:09.524  WARN 55941 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@131e22f2] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+2023-10-31 19:08:09.524  INFO 55941 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-31 19:08:09.526  INFO 55941 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-10-31 19:08:09.528 ERROR 55941 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/elenorechenmbp2023/git/SpringBootDemo/target/classes/com/example/SpringBootDemo/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@131e22f2] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.SpringBootDemo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Resolution of declared constructors on bean Class [com.example.SpringBootDemo.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@131e22f2] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:318) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[na:na]
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2652) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:313) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:496) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:475) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.17.jar:2.7.17]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 50 common frames omitted
+
+2023-10-31 19:08:09.603  INFO 35733 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-31 19:08:09.632  INFO 35733 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-31 19:08:09.649  INFO 35733 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-31 19:08:09.700  INFO 35733 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-31 19:08:09.745  INFO 35733 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-10-31 19:08:10.051  INFO 35733 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-31 19:08:10.057  INFO 35733 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-31 19:08:10.196  WARN 35733 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-31 19:08:10.335  INFO 35733 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1234 (http) with context path ''
+2023-10-31 19:08:10.341  INFO 35733 --- [main] c.e.S.SpringBootDemoApplication          : Started SpringBootDemoApplication in 1.554 seconds (JVM running for 6.929)
+2023-10-31 19:08:24.049  INFO 35733 --- [http-nio-1234-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-31 19:08:24.050  INFO 35733 --- [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-31 19:08:24.052  INFO 35733 --- [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-31 19:08:24.094  INFO 35733 --- [http-nio-1234-exec-2] c.e.S.controller.UserController          : createUser 7777777
