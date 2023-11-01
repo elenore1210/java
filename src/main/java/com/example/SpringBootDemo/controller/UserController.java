@@ -8,11 +8,7 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
@@ -32,6 +28,7 @@ public class UserController {
         logger.info("hih777789999");
         return "hih77778999";
     }
+
     @PostMapping("/login")
     public ResponseEntity<String> loginUser(@RequestBody @NotNull UserLoginRequest userLoginRequest) {
         String username = userLoginRequest.getUsername();
@@ -47,7 +44,7 @@ public class UserController {
 
     @GetMapping("/getAll")
     public String getAllUsers() {
-       List<User> users = userService.getAllUsers();
+        List<User> users = userService.getAllUsers();
         StringBuilder result = new StringBuilder();
         result.append("All Users:<br>");
         for (User user : users) {
@@ -55,14 +52,24 @@ public class UserController {
         }
         return result.toString();
     }
+
     @PostMapping("/create")
     public ResponseEntity<String> createUser(@RequestBody User user) {
-        logger.info("createUser 7777777");
         boolean isUserCreated = userService.saveUser(user);
         if (isUserCreated) {
             return ResponseEntity.status(HttpStatus.CREATED).body("User created successfully");
         } else {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("User creation failed");
+        }
+    }
+
+    @DeleteMapping("/delete/{userId}")
+    public ResponseEntity<String> deleteUser(@PathVariable Long userId) {
+        boolean isUserDeleted = userService.deleteUser(userId);
+        if (isUserDeleted) {
+            return ResponseEntity.status(HttpStatus.OK).body("User deleted successfully");
+        } else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("User deletion failed");
         }
     }
 

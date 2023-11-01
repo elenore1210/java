@@ -37,4 +37,14 @@ public class UserService {
             return false;
         }
     }
+
+    public boolean deleteUser(Long userId) {
+        try {
+            userRepository.deleteById(userId);
+            return true;
+        } catch (Exception e) {
+            logger.info(String.valueOf(e));
+            return false;
+        }
+    }
 }
