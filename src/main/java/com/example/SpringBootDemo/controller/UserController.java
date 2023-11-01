@@ -73,4 +73,22 @@ public class UserController {
         }
     }
 
+    @PutMapping("/update/{userId}")
+    public ResponseEntity<String> updateUser(@PathVariable Long userId, @RequestBody User updatedUser) {
+        User existingUser = userService.getUserById(userId);
+        if (existingUser != null) {
+            existingUser.setUsername(updatedUser.getUsername());
+            existingUser.setPassword(updatedUser.getPassword());
+
+            boolean isUserUpdated = userService.updateUser(existingUser);
+            if (isUserUpdated) {
+                return ResponseEntity.status(HttpStatus.OK).body("User updated successfully");
+            } else {
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("User update failed");
+            }
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
+        }
+    }
+
 }

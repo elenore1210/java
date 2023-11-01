@@ -47,4 +47,20 @@ public class UserService {
             return false;
         }
     }
+
+    public User getUserById(Long userId) {
+        return userRepository.findById(userId).orElse(null);
+    }
+
+    public boolean updateUser(User user) {
+        if (userRepository.existsById(user.getId())) {
+            try {
+                userRepository.save(user);
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+        }
+        return false;
+    }
 }
