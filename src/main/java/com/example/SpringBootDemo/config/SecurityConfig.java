@@ -14,11 +14,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/**").permitAll()
-                .antMatchers("/login").permitAll()  // 允许所有人访问登录页
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/login")  // 指定登录页面的URL
+                .loginPage("/perform_login")  // 指定登录页面的URL
                 .permitAll()
                 .and()
                 .logout()
