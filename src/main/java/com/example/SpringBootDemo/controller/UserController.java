@@ -78,6 +78,7 @@ public class UserController {
         User existingUser = userService.getUserById(userId);
         if (existingUser != null) {
             existingUser.setUsername(updatedUser.getUsername());
+            existingUser.setPassword(updatedUser.getName());
             existingUser.setPassword(updatedUser.getPassword());
 
             boolean isUserUpdated = userService.updateUser(existingUser);

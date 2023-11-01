@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.example.SpringBootDemo.utils.PasswordUtils;
 
 import java.util.List;
 
@@ -25,15 +26,18 @@ public class UserService {
     }
 
     public User loginUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, password);
+        String hashedPassword = PasswordUtils.encryptPassword(password);
+        return userRepository.findByUsernameAndPassword(username, hashedPassword);
     }
 
     public boolean saveUser(User user) {
         try {
+            String encryptedPassword = PasswordUtils.encryptPassword(user.getPassword());
+            user.setPassword(encryptedPassword);
             userRepository.save(user);
             return true;
         } catch (Exception e) {
-            logger.info(String.valueOf(e));
+            logger.error("Error saving user: " + e.getMessage());
             return false;
         }
     }
@@ -53,6 +57,8 @@ public class UserService {
     }
 
     public boolean updateUser(User user) {
+        String encryptedPassword = PasswordUtils.encryptPassword(user.getPassword());
+        user.setPassword(encryptedPassword);
         if (userRepository.existsById(user.getId())) {
             try {
                 userRepository.save(user);
