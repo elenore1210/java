@@ -23,12 +23,6 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping("/")
-    public String hello() {
-        logger.info("hih777789999");
-        return "hih77778999";
-    }
-
     @PostMapping("/login")
     public ResponseEntity<String> loginUser(@RequestBody @NotNull UserLoginRequest userLoginRequest) {
         String username = userLoginRequest.getUsername();
@@ -91,5 +85,4 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
         }
     }
-
 }
